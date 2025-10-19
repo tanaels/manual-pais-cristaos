@@ -1,13 +1,24 @@
 "use client";
 
 import { useState } from 'react';
-import { Heart, BookOpen, Users, Shield, Star, Download, CheckCircle, Gift, Clock, ArrowRight } from 'lucide-react';
+import { Heart, BookOpen, Users, Shield, Star, Download, CheckCircle, Gift, Clock, ArrowRight, Upload, Link } from 'lucide-react';
 
 export default function SalesPage() {
   const [showFAQ, setShowFAQ] = useState<number | null>(null);
+  // Configurações pré-definidas conforme solicitado
+  const [productImage] = useState<string>('https://i.ibb.co/dYF31XH/image.png');
+  const [salesPageLink] = useState<string>('https://pay.cakto.com.br/wzihpgi_613322');
 
   const toggleFAQ = (index: number) => {
     setShowFAQ(showFAQ === index ? null : index);
+  };
+
+  const handleActionClick = () => {
+    if (salesPageLink) {
+      window.open(salesPageLink, '_blank');
+    } else {
+      alert('Link de vendas não configurado!');
+    }
   };
 
   return (
@@ -36,14 +47,30 @@ export default function SalesPage() {
           <div className="mb-8">
             <div className="bg-white/20 rounded-2xl p-8 max-w-md mx-auto mb-8">
               <div className="text-center">
-                <BookOpen className="w-20 h-20 mx-auto mb-4 text-yellow-300" />
+                <div className="mb-4">
+                  <img 
+                    src={productImage} 
+                    alt="Manual dos Pais Cristãos" 
+                    className="w-32 h-40 mx-auto rounded-lg shadow-2xl object-cover border-4 border-white/30"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                  <div className="hidden">
+                    <BookOpen className="w-20 h-20 mx-auto mb-4 text-yellow-300" />
+                  </div>
+                </div>
                 <p className="text-lg font-semibold">E-book Digital - 60 Páginas</p>
                 <p className="text-blue-200">Download Imediato</p>
               </div>
             </div>
           </div>
 
-          <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-xl px-12 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 mb-4">
+          <button 
+            onClick={handleActionClick}
+            className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-xl px-12 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 mb-4"
+          >
             ✨ QUERO TRANSFORMAR MINHA FAMÍLIA AGORA
           </button>
           <p className="text-sm text-blue-200">Acesso imediato • Garantia de 15 dias • Bônus exclusivos</p>
@@ -125,7 +152,10 @@ export default function SalesPage() {
             </div>
           </div>
 
-          <button className="bg-green-600 hover:bg-green-500 text-white font-bold text-xl px-12 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300">
+          <button 
+            onClick={handleActionClick}
+            className="bg-green-600 hover:bg-green-500 text-white font-bold text-xl px-12 py-4 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+          >
             🎯 SIM, QUERO CRIAR FILHOS PARA O REINO
           </button>
         </div>
@@ -152,7 +182,18 @@ export default function SalesPage() {
               </div>
               <div className="text-center">
                 <div className="bg-gradient-to-br from-blue-500 to-purple-600 p-8 rounded-2xl text-white">
-                  <BookOpen className="w-20 h-20 mx-auto mb-4" />
+                  <img 
+                    src={productImage} 
+                    alt="Manual dos Pais Cristãos" 
+                    className="w-32 h-40 mx-auto mb-4 rounded-lg shadow-2xl object-cover border-4 border-white/30"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
+                    }}
+                  />
+                  <div className="hidden">
+                    <BookOpen className="w-20 h-20 mx-auto mb-4" />
+                  </div>
                   <p className="text-lg font-semibold">Para Pais, Mães e</p>
                   <p className="text-lg font-semibold">Educadores Cristãos</p>
                   <p className="text-sm mt-2 opacity-90">Que desejam criar filhos temente a Deus</p>
@@ -485,7 +526,10 @@ export default function SalesPage() {
             </div>
           </div>
 
-          <button className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-2xl px-16 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 mb-6">
+          <button 
+            onClick={handleActionClick}
+            className="bg-yellow-500 hover:bg-yellow-400 text-black font-bold text-2xl px-16 py-6 rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300 mb-6"
+          >
             🚀 TRANSFORMAR MINHA FAMÍLIA AGORA
           </button>
 
@@ -565,7 +609,10 @@ export default function SalesPage() {
         <p className="text-gray-300 mb-6">
           "Porque eu sei os planos que tenho para vocês, diz o Senhor, planos de fazê-los prosperar e não de causar dano, planos de dar a vocês esperança e um futuro." - Jeremias 29:11
         </p>
-        <button className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+        <button 
+          onClick={handleActionClick}
+          className="bg-blue-600 hover:bg-blue-500 text-white font-bold text-lg px-10 py-4 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300"
+        >
           ✨ COMEÇAR MINHA TRANSFORMAÇÃO FAMILIAR
         </button>
       </section>
