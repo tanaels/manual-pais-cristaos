@@ -61,7 +61,7 @@ export default function SalesPage() {
                     <BookOpen className="w-20 h-20 mx-auto mb-4 text-yellow-300" />
                   </div>
                 </div>
-                <p className="text-lg font-semibold">E-book Digital - 60 Páginas</p>
+                <p className="text-lg font-semibold">E-book Digital</p>
                 <p className="text-blue-200">Download Imediato</p>
               </div>
             </div>
@@ -516,13 +516,13 @@ export default function SalesPage() {
           <div className="bg-white/20 backdrop-blur-sm rounded-2xl p-8 mb-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">🎁 Oferta Completa por Tempo Limitado:</h3>
             <div className="text-left space-y-2 mb-6">
-              <p>✅ Manual dos Pais Cristãos (60 páginas) - R$ 97,00</p>
+              <p>✅ Manual dos Pais Cristãos - R$ 97,00</p>
               <p>✅ Bônus #1: Guia de Orações Poderosas - R$ 47,00</p>
               <p>✅ Bônus #2: Plano de Devocionais Familiares - R$ 67,00</p>
               <p>✅ Bônus #3: Checklist do Pai/Mãe Cristão - R$ 37,00</p>
               <hr className="border-white/30 my-4" />
               <p className="text-lg"><span className="line-through opacity-60">Valor Total: R$ 248,00</span></p>
-              <p className="text-3xl font-bold text-yellow-300">HOJE APENAS: R$ 47,00</p>
+              <p className="text-3xl font-bold text-yellow-300">HOJE APENAS: R$ 17,00</p>
             </div>
           </div>
 
