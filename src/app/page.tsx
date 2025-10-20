@@ -174,7 +174,7 @@ export default function SalesPage() {
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Manual dos Pais Cristãos</h3>
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-3" />E-book em PDF de alta qualidade</li>
-                  <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-3" />60 páginas de conteúdo prático</li>
+                  <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-3" />Páginas de conteúdos práticos</li>
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-3" />Download imediato após a compra</li>
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-3" />Acesso vitalício ao material</li>
                   <li className="flex items-center"><CheckCircle className="w-5 h-5 text-green-500 mr-3" />Compatível com todos os dispositivos</li>
