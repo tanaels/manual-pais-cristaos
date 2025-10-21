@@ -73,7 +73,7 @@ export default function SalesPage() {
           >
             ✨ QUERO TRANSFORMAR MINHA FAMÍLIA AGORA
           </button>
-          <p className="text-sm text-blue-200">Acesso imediato • Garantia de 15 dias • Bônus exclusivos</p>
+          <p className="text-sm text-blue-200">Acesso imediato • Garantia de 7 dias • Bônus exclusivos</p>
         </div>
       </section>
 
@@ -480,7 +480,7 @@ export default function SalesPage() {
       <section className="py-16 px-4 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            🛡️ Garantia Incondicional de 15 Dias
+            🛡️ Garantia Incondicional de 7 Dias
           </h2>
 
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-8">
@@ -488,7 +488,7 @@ export default function SalesPage() {
             <h3 className="text-2xl font-bold mb-4">100% Livre de Riscos</h3>
             <p className="text-lg mb-6">
               Estamos tão confiantes na qualidade e eficácia do nosso manual que oferecemos uma 
-              <strong> garantia incondicional de 15 dias</strong>.
+              <strong> garantia incondicional de 7 dias</strong>.
             </p>
             <p className="text-blue-100 mb-6">
               Se por qualquer motivo você não ficar completamente satisfeito(a) com o conteúdo, 
@@ -540,7 +540,7 @@ export default function SalesPage() {
             </div>
             <div className="flex items-center">
               <Shield className="w-4 h-4 mr-2" />
-              <span>Garantia 15 Dias</span>
+              <span>Garantia 7 Dias</span>
             </div>
             <div className="flex items-center">
               <Gift className="w-4 h-4 mr-2" />
@@ -573,7 +573,7 @@ export default function SalesPage() {
               },
               {
                 question: "E se eu não conseguir aplicar os métodos?",
-                answer: "O manual foi criado para ser extremamente prático e fácil de aplicar. Além disso, você tem 15 dias de garantia incondicional para testar todos os métodos sem riscos."
+                answer: "O manual foi criado para ser extremamente prático e fácil de aplicar. Além disso, você tem 7 dias de garantia incondicional para testar todos os métodos sem riscos."
               },
               {
                 question: "Posso imprimir o e-book?",
